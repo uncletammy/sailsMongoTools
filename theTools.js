@@ -156,14 +156,39 @@ var t = {
 */
 
 	// Output the join table for links - link_postedin__message_links
-	fixMessages: function(){
-		var messages = t.messages;
 
-		var fixedMessages = t.mapMessages(t.messages);
 
-		t.saveJSON('savedMessages',fixedMessages);
+	mapUserMentions: function(){
+		var messages = t.messages_sample;
+		var users = t.users;
+		var allMentions = [];
+// message_usermentions__user_mentionedin
+        _.each(messages,function(oneMessage){
+
+            var squishedMessage = oneMessage.text.toLowerCase().replace(/[^\w ]/ig,'').replace(/ {2,}/,'');
+
+        	_.each(user,function(oneUser){
+
+
+        		if (_.contains(squishedMessage,oneUser.lcnick)){
+					var anObject = {
+						"message_usermentions" : oneMessage["_id"]["$oid"],
+						"user_mentionedin" : oneUser.lcnick
+					}
+
+					allMentions.push(anObject);
+        		}
+
+        	})
+
+        });
+
+        allMentions = _.unique(allMentions);
+
+		console.log('There are',allMentions.length,'userMentions in',messages.length,'messages');
+
+		t.saveJSON('message_usermentions__user_mentionedin',allMentions);
 		return true;
-
 	},
 	mapLinks: function(){
 		var t=this;
