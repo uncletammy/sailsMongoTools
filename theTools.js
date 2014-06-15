@@ -159,18 +159,21 @@ var t = {
 
 
 	mapUserMentions: function(){
-		var messages = t.messages_sample;
-		var users = t.users;
+		var messages = t.messages;
 		var allMentions = [];
-// message_usermentions__user_mentionedin
+		var users = _.filter(t.users,function(oneUser){
+			if (oneUser.lcnick.length>2)
+				return oneUser
+		});
+
         _.each(messages,function(oneMessage){
 
-            var squishedMessage = oneMessage.text.toLowerCase().replace(/[^\w ]/ig,'').replace(/ {2,}/,'');
+            var messageWords = oneMessage.text.toLowerCase().replace(/[^\w ]/ig,'').replace(/ {2,}/,'').split(' ');
 
-        	_.each(user,function(oneUser){
+        	_.each(users,function(oneUser){
 
 
-        		if (_.contains(squishedMessage,oneUser.lcnick)){
+        		if (_.contains(messageWords,oneUser.lcnick)){
 					var anObject = {
 						"message_usermentions" : oneMessage["_id"]["$oid"],
 						"user_mentionedin" : oneUser.lcnick
@@ -280,37 +283,111 @@ var t = {
 		t.saveJSON('AllGramsEver',mapped);
 		return true;
 	},
-	mapGrams: function(){
+	mapGrams2: function(fileNameWithMessages){
+		var t=this;
+		var daGrams = t.grams;
+		var allGrams =[];
+		var saveToTable = [];
+		var theseMessages = t.parseFile(fileNameWithMessages);
+        var NGrams = natural.NGrams;
+		// var allMessages = _.unique(_.pluck(theseMessages,'text'));
+		console.log('Now processing',theseMessages.length,'messages and saving to',fileNameWithMessages);
+		_.each(theseMessages, function(oneMessage){
+            var getMessageWords = oneMessage.text.toLowerCase().replace(/[^\w ]/ig,'').replace(/ {2,}/,'').split(' ');
+            var allMessageWords = _.unique(_.filter(getMessageWords,function(thisWord){
+                if (thisWord.length>1);// Is this smart?  Only time will tell.
+                    return thisWord
+            }));
+
+            var unoGrams = NGrams.ngrams(allMessageWords, 1);
+            var biGrams = NGrams.bigrams(allMessageWords);
+            var triGrams = NGrams.trigrams(allMessageWords);
+
+            var processTheseGrams = biGrams.concat(unoGrams,triGrams);
+
+			var filteredArrays = _.map(processTheseGrams,function(oneGramArray){
+				var joinedValue = oneGramArray.join('');
+				if (joinedValue.length > 0){
+					return joinedValue+':'+oneMessage["_id"]["$oid"];
+				}
+			});
+
+			allGrams = allGrams.concat(filteredArrays);
+
+		});
+
+		// var uniqueGrams = _.unique(allGrams);
+		var uniqueGrams = allGrams;
+
+		console.log('There are',uniqueGrams.length,'Grams among',theseMessages.length);
+
+		var mapped = _.map(uniqueGrams,function(oneGramArray){
+			var seperateGramAndId = oneGramArray.split(':');
+			var anItem = {
+				"gram_inmessage" : _.find(daGrams,{name:seperateGramAndId[0]})["_id"]["$oid"],
+				"message_grams" : seperateGramAndId[1]
+			};
+			return anItem;
+			// inMessage.push(anItem);
+// {name:oneGramArray}
+		});
+
+
+		// console.log('Returning',allGrams.length)
+		console.log('There are',mapped.length,'grams in all',theseMessages.length,'messages');
+		t.saveJSON('gram_inmessage____'+fileNameWithMessages,mapped);
+		return true;
+	},
+	mapGrams: function(fileNameWithMessages){
 		var t=this;
 // gram_inmessage__message_grams
+		var counter = 0;
 		var inMessage = [];
 		var allGrams = t.grams;
-		var messagesWithIDs = _.map(t.messages_sample,function(oneMessage){
+
+		var theMessages = t.parseFile(fileNameWithMessages);
+
+		var messagesWithIDs = _.map(theMessages,function(oneMessage){
 			var msgIdObj = {
-				msgText: oneMessage.text.toLowerCase().replace(/[^\w ]/ig,'').replace(/ {2,}/,''),
+				msgText: oneMessage.text.toLowerCase().replace(/[^\w ]/ig,'').replace(/ {2,}/,'').split(' '),
 				messageID: oneMessage["_id"]["$oid"]
 			}
 			return msgIdObj;
 		});
 
-		console.log('There are',allGrams.length,'unique grams');
+		console.log('There are',allGrams.length,'unique grams and',theMessages.length,'messages to look through.');
 
 		_.each(allGrams, function(oneGram){
 
+			counter++;
+			if ((counter/1000).toString().indexOf('.')<0){
+				var percentageDone = counter/405371;
+				console.log(counter,'out of 405371 - ',percentageDone,'% finished');
+			}
+
+// t.mapGrams('msgSplit0.json')
 			_.each(messagesWithIDs,function(oneMessageID){
-				if (_.contains(oneMessageID.msgText,oneGram.name)){
-					var anItem = {
-						"gram_inmessage" : oneGram["_id"]["$oid"],
-						"message_grams" : oneMessageID.messageID
-					};
-					inMessage.push(anItem);
-				}
+
+				// console.log('oneMessageID.msgText is of type',typeof oneMessageID.msgText,'and length',oneMessageID.msgText.length);
+				// return fart;
+				_.each(oneMessageID.msgText,function(checkThisWord){
+
+					if (oneGram === checkThisWord){
+						var anItem = {
+							"gram_inmessage" : oneGram["_id"]["$oid"],
+							"message_grams" : oneMessageID.messageID
+						};
+						inMessage.push(anItem);
+					}
+					
+				})
+
 			})
 		});
 
 
-		console.log('There are',inMessage.length,'grams in all',t.messages_sample.length,'messages');
-		t.saveJSON('gram_inmessage__message_grams',inMessage);
+		console.log('There are',inMessage.length,'grams in all',theMessages.length,'messages');
+		t.saveJSON('gram_inmessage____'+fileNameWithMessages,inMessage);
 
 	},
 	getLinks: function(){
@@ -385,12 +462,12 @@ var t = {
 			var sortThem = _.sortBy(findEveryone, function(someone){ return new Date(someone.updatedAt)});
 
 			if (sortThem.length === 1){
-				console.log('Unique Message.  Exiting');
+				// console.log('Unique Message.  Exiting');
 				return
 			}
 			sortThem.shift();
-			returnTheseImposterIds = returnTheseImposterIds.concat(_.pluck(sortThem,'id'));
-		}) 
+			returnTheseImposterIds = returnTheseImposterIds.concat(_.pluck(sortThem,'_id')["$oid"]);
+		})
 		console.log('Found',returnTheseImposterIds.length,'imposters among',someCollection.length);
 		return returnTheseImposterIds;
 	},
@@ -512,11 +589,30 @@ var t = {
 		t.saveJSON(fileName,t.parseFile(fileName+'.json'));
 		console.log(fileName,'.json is now pretty and readable in sublime');
 		return;
+	},
+	splitToFiles: function(oneBigArray,splitByQty,fileNamePrefix){
+		console.log('Splitting',oneBigArray.length,'into',splitByQty,'files');
+		var numOfCompleteFiles = oneBigArray.length/splitByQty;
+		var grabTheseObjects = oneBigArray;
+		var fileNames = [];
+		var turnToNumber = Math.floor(numOfCompleteFiles);
+		while(turnToNumber>0){
+			fileNames.push({saveAs:fileNamePrefix+turnToNumber,vals:grabTheseObjects.splice(0,splitByQty+1)})
+			turnToNumber--;
+		}
+
+		fileNames.push({saveAs:fileNamePrefix+turnToNumber,vals:grabTheseObjects})
+
+
+		_.each(fileNames,function(oneFileObj){
+			console.log('File:',oneFileObj.saveAs+'.json','will contain',oneFileObj.vals.length,'objects')
+			t.saveJSON(oneFileObj.saveAs,oneFileObj.vals)
+		})
+		return true;
 	}
 };
 t.users = t.parseFile('usersOnServer.json');
 t.messages = t.parseFile('messagesOnServer.json');
-t.messages_sample = t.parseFile('messagesOnServer_sample.json');
 t.links = t.parseFile('linksOnServer.json');
-t.grams = t.parseFile('gramsThatArrived.json');
+t.grams = t.parseFile('gramsOnServer.json');
 module.exports=t;
