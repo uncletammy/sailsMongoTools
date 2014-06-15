@@ -466,7 +466,8 @@ var t = {
 				return
 			}
 			sortThem.shift();
-			returnTheseImposterIds = returnTheseImposterIds.concat(_.pluck(sortThem,'_id')["$oid"]);
+			// returnTheseImposterIds = returnTheseImposterIds.concat(_.pluck(sortThem,'_id')["$oid"]);
+			returnTheseImposterIds = returnTheseImposterIds.concat(sortThem);
 		})
 		console.log('Found',returnTheseImposterIds.length,'imposters among',someCollection.length);
 		return returnTheseImposterIds;
