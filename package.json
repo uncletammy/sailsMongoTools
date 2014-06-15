@@ -1,0 +1,19 @@
+{
+  "name": "sailsMongoTools",
+  "version": "0.0.0",
+  "description": "",
+  "main": "theTools.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uncletammy/sailsMongoTools.git"
+  },
+  "author": "Cramrod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uncletammy/sailsMongoTools/issues"
+  },
+  "homepage": "https://github.com/uncletammy/sailsMongoTools"
+}
