@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/uncletammy/sailsMongoTools/issues"
   },
-  "homepage": "https://github.com/uncletammy/sailsMongoTools"
+  "homepage": "https://github.com/uncletammy/sailsMongoTools",
+  "dependencies": {
+    "async": "~0.9.0",
+    "lodash": "~2.4.1",
+    "natural": "~0.1.27",
+    "fs-extra": "~0.9.1"
+  }
 }
