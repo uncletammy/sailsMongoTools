@@ -402,7 +402,7 @@ var t = {
             //     if (thisWord.length>1);// Is this smart?  Only time will tell.
             //         return thisWord
             // }));
-			var linksFound = _.unique(oneMessage.text.match(/(https{0,1}:\/\/[:?=#!.\w\d\/_-]+)/ig));
+			var linksFound = _.unique(oneMessage.text.match(/(https{0,1}:\/\/[:?=#&!.\w\d\/_-]+)/ig));
 
             if (linksFound.length)
             	allLinks = allLinks.concat(linksFound);
