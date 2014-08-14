@@ -33,20 +33,20 @@ var natural = require('natural');
 // }
 
 
-// t.saveJSON('irc_users_formatted',t.parseFile('.json'));
+// t.saveJsonSync('irc_users_formatted',t.parseFile('.json'));
 // 
 
-// t.saveJSON('allUniqueObjects',t.findImposter(t.parseFile('messageOnServer.json'),['text','sender']))
-// t.saveJSON('delete_these_messages',t.findImposter(t.parseFile('messageOnServer.json'),'text'))
+// t.saveJsonSync('allUniqueObjects',t.findImposter(t.parseFile('messageOnServer.json'),['text','sender']))
+// t.saveJsonSync('delete_these_messages',t.findImposter(t.parseFile('messageOnServer.json'),'text'))
 // t.parseFile('delete_these_messages.json')
-// t.saveJSON('allUniqueObjects',t.findImposter(t.parseFile('messageOnServer.json'),['text','sender']))
+// t.saveJsonSync('allUniqueObjects',t.findImposter(t.parseFile('messageOnServer.json'),['text','sender']))
 
-// t.getRecords('message',[],function(records){t.saveJSON('messageOnServer_part2',records)});
+// t.getRecords('message',[],function(records){t.saveJsonSync('messageOnServer_part2',records)});
 
 // t.addMessages(t.mapMessages(this.parseFile('/home/dude/node/scripts/getSailsAggregatorData/roundTwo/final__chatMessages_exported.json'));
 // t.addMessages(t.parseFile('/home/dude/node/scripts/getSailsAggregatorData/roundTwo/final__chatMessages_exported.json'));
 
-// t.saveJSON('messagesNeedAssociations',t.doThatThing())
+// t.saveJsonSync('messagesNeedAssociations',t.doThatThing())
 
 // t.makeAssociationMap(t.parseFile('messagesNeedAssociations.json'),'grams',t.parseFile('gramsOnServer.json'))
 
@@ -76,7 +76,7 @@ var t = {
 
 		return getFalselyAccused
 	},
-	// t=require('../roundTwo/tools.js');t.saveJSON('tested_messageGramMap',t.makeAssociationMap(t.parseFile('messagesNeedAssociations_test.json'),'grams',t.parseFile('grams_on_server.json')))
+	// t=require('../roundTwo/tools.js');t.saveJsonSync('tested_messageGramMap',t.makeAssociationMap(t.parseFile('messagesNeedAssociations_test.json'),'grams',t.parseFile('grams_on_server.json')))
 	makeAssociationMap: function(collectionNameToAssociate){
 				var t = this;
 
@@ -190,7 +190,7 @@ var t = {
 
 		console.log('There are',allMentions.length,'userMentions in',messages.length,'messages');
 
-		t.saveJSON('message_usermentions__user_mentionedin',allMentions);
+		t.saveJsonSync('message_usermentions__user_mentionedin',allMentions);
 		return true;
 	},
 	mapLinks: function(){
@@ -235,8 +235,8 @@ var t = {
         });
 
 		console.log('There are',postedIn.length,'links posted in',messages.length,'messages');
-		t.saveJSON('link_postedin__message_links',postedIn);
-		t.saveJSON('link_postedby__user_links',postedBy);
+		t.saveJsonSync('link_postedin__message_links',postedIn);
+		t.saveJsonSync('link_postedby__user_links',postedBy);
 		return true;
 	},
 	getGrams: function(){
@@ -280,7 +280,7 @@ var t = {
 
 
 		// console.log('Returning',allGrams.length)
-		t.saveJSON('AllGramsEver',mapped);
+		t.saveJsonSync('AllGramsEver',mapped);
 		return true;
 	},
 	mapGrams2: function(fileNameWithMessages){
@@ -335,7 +335,7 @@ var t = {
 
 		// console.log('Returning',allGrams.length)
 		console.log('There are',mapped.length,'grams in all',theseMessages.length,'messages');
-		t.saveJSON('gram_inmessage____'+fileNameWithMessages,mapped);
+		t.saveJsonSync('gram_inmessage____'+fileNameWithMessages,mapped);
 		return true;
 	},
 	mapGrams: function(fileNameWithMessages){
@@ -387,7 +387,7 @@ var t = {
 
 
 		console.log('There are',inMessage.length,'grams in all',theMessages.length,'messages');
-		t.saveJSON('gram_inmessage____'+fileNameWithMessages,inMessage);
+		t.saveJsonSync('gram_inmessage____'+fileNameWithMessages,inMessage);
 
 	},
 	getLinks: function(){
@@ -493,11 +493,22 @@ var t = {
 		whichModel = whichModel.exec(whenReturned);
 
 	},
-	saveJSON: function(filename,someJSON){
+	saveJsonSync: function(filename,someJSON){
 		console.log('Saving someJSON in',filename,'.json')
 		var saveStatus = fse.outputJsonSync(process.cwd()+'/'+filename+'.json', someJSON);
 
 		return saveStatus;
+	},
+	saveJsonAsync: function(filename,someJSON,callback){
+		console.log('Saving someJSON in',filename,'.json');
+		var returnResults = function(err){
+			if (err) return console.log('Error writing "'+filename+'"')
+
+			console.log('"'+filename+'" written');
+			return callback()
+		};
+
+		fse.outputJson(process.cwd()+'/'+filename+'.json', someJSON, returnResults);
 	},
 	addMessages: function(createThese){
 
@@ -587,7 +598,7 @@ var t = {
 		}
 	},
 	pretty: function(fileName){
-		t.saveJSON(fileName,t.parseFile(fileName+'.json'));
+		t.saveJsonSync(fileName,t.parseFile(fileName+'.json'));
 		console.log(fileName,'.json is now pretty and readable in sublime');
 		return;
 	},
@@ -607,13 +618,103 @@ var t = {
 
 		_.each(fileNames,function(oneFileObj){
 			console.log('File:',oneFileObj.saveAs+'.json','will contain',oneFileObj.vals.length,'objects')
-			t.saveJSON(oneFileObj.saveAs,oneFileObj.vals)
+			t.saveJsonSync(oneFileObj.saveAs,oneFileObj.vals)
 		})
 		return true;
+	},
+	stripAndChopString: function(someString){
+	    var getMessageWords = someString.toLowerCase().replace(/[^\w ]/ig,' ')./*replace(/[ÁÉÍÓÚáéíóuñÑ]/ig,'').*/replace(/ {2,}/,' ').split(' ');
+	    var allMessageWords = _.filter(getMessageWords,function(thisWord){
+	        if (thisWord.length>=1);// Is this smart?  Only time will tell.
+	            return thisWord
+	    });
+	    return allMessageWords
+	},
+	makeNgrams: function(gramThisString){
+		var allMessageWords = t.stripAndChopString(gramThisString);
+	    var NGrams = natural.NGrams;
+	    var unoGrams = NGrams.ngrams(allMessageWords, 1);
+	    var biGrams = NGrams.bigrams(allMessageWords);
+	    var triGrams = NGrams.trigrams(allMessageWords);
+	    var quadGrams = NGrams.ngrams(allMessageWords, 4);
+
+	    return _.unique(quadGrams.concat(unoGrams,triGrams,biGrams));
+	},
+	getAllCards: function(){
+		var allCards = [];
+		_.each(t.mtg,function(oneSet){
+			_.each(oneSet.cards,function(oneCard){
+				allCards.push(oneCard);
+			})
+		});
+		t.saveJsonSync('everyMtgCard.json',allCards);
+	},
+	testAsync: function(){
+		var gramTheseFields = ['text','title','artist','type','flavor'];
+		require('async').each(gramTheseFields, function(oneField,next){
+			console.log('Now working on',oneField);
+			next()
+		},function(err){
+			console.log('done with all fields')
+		})
+
+	},
+	runMtgTasks: function(someCollection,someNumber){
+
+		var gramTheseFields = ['text','originalText','title','artist','originalType','flavor'];
+		var cardsWithGrams = [];
+		var cardWords = [];
+
+		require('async').each(someCollection, function(oneCard,next){
+			oneCard.grams = {};
+			_.each(gramTheseFields,function(oneGramField){
+				if (!_.isUndefined(oneCard[oneGramField])){
+					oneCard.grams[oneGramField] = t.makeNgrams(oneCard[oneGramField]);
+					cardWords = cardWords.concat(cardWords,t.stripAndChopString(oneCard[oneGramField]));
+				}
+			})
+			oneCard.wordsInCard = _.unique(cardWords);
+			cardsWithGrams.push(oneCard);
+			next();
+		},function(err){
+			var showResults = function(){
+				console.log('Done saving all grams to mtg card objects.  There were',cardsWithGrams.length);
+				t.saveJsonAsync('allMtgCardsWithGrams_sample'+someNumber,_.sample(cardsWithGrams,20),function(){
+					console.log('Done!')
+					return;
+				});
+			}
+			t.saveJsonAsync('allMtgCardsWithGrams'+someNumber,cardsWithGrams,showResults);
+		});
 	}
 };
-t.users = t.parseFile('usersOnServer.json');
-t.messages = t.parseFile('messagesOnServer.json');
-t.links = t.parseFile('linksOnServer.json');
-t.grams = t.parseFile('gramsOnServer.json');
+
+
+// t.mtg = require('./allMtgData.json');
+t.cards0 = require('./allCards0.json');
+t.cards1 = require('./allCards1.json');
+t.cards2 = require('./allCards2.json');
+
+// t.gcards0 = require('./allMtgCardsWithGrams0.json');
+// t.gcards1 = require('./allMtgCardsWithGrams1.json');
+// t.gcards2 = require('./allMtgCardsWithGrams2.json');
+
+// t.cards = require('./randomSample.json');
+// t.users = t.parseFile('usersOnServer.json');
+// t.messages = t.parseFile('messagesOnServer.json');
+// t.links = t.parseFile('linksOnServer.json');
+// t.grams = t.parseFile('gramsOnServer.json');
 module.exports=t;
+
+
+// {
+//   grams: {
+//     text: [],
+//     originalText: [],
+//     title:[],
+//     artist:[],
+//     originalType:[],
+//     flavor:[],
+//     foreignNames:[{name:'kjasd asdas'}]
+//   }
+// }

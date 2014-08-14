@@ -1,0 +1,1378 @@
+[
+  {
+    "layout": "normal",
+    "type": "Land",
+    "types": [
+      "Land"
+    ],
+    "multiverseid": 141802,
+    "name": "Shimmering Grotto",
+    "originalType": "Land",
+    "rarity": "Common",
+    "artist": "Alan Pollack",
+    "text": "{T}: Add {1} to your mana pool.\n\n{1}, {T}: Add one mana of any color to your mana pool.",
+    "originalText": "{T}: Add {1} to your mana pool.\n\n{1}, {T}: Add one mana of any color to your mana pool.",
+    "flavor": "Once each year, the sun's rays reach the hidden chamber of Velis Vel, and the changelings congregate from afar to bathe in the ever-shifting light.",
+    "number": "273",
+    "imageName": "shimmering grotto",
+    "foreignNames": [
+      {
+        "language": "Chinese Traditional",
+        "name": "閃爍石室"
+      },
+      {
+        "language": "Chinese Simplified",
+        "name": "闪烁石室"
+      },
+      {
+        "language": "French",
+        "name": "Grotte chatoyante"
+      },
+      {
+        "language": "German",
+        "name": "Schimmernde Grotte"
+      },
+      {
+        "language": "Italian",
+        "name": "Grotta Scintillante"
+      },
+      {
+        "language": "Japanese",
+        "name": "ゆらめく岩屋"
+      },
+      {
+        "language": "Korean",
+        "name": "반짝거리는 굴"
+      },
+      {
+        "language": "Portuguese",
+        "name": "Gruta Cintilante"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Gruta Cintilante"
+      },
+      {
+        "language": "Russian",
+        "name": "Мерцающий Грот"
+      },
+      {
+        "language": "Spanish",
+        "name": "Gruta resplandeciente"
+      }
+    ],
+    "legalities": {
+      "Standard": "Legal",
+      "Modern": "Legal",
+      "Innistrad Block": "Legal",
+      "Lorwyn-Shadowmoor Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Tribal Wars Standard": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Lorwyn",
+      "Innistrad",
+      "Planechase 2012 Edition",
+      "Magic 2014 Core Set"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Creature — Lizard",
+    "types": [
+      "Creature"
+    ],
+    "colors": [
+      "Red"
+    ],
+    "multiverseid": 29968,
+    "name": "Obstinate Familiar",
+    "subtypes": [
+      "Lizard"
+    ],
+    "originalType": "Creature — Lizard",
+    "cmc": 1,
+    "rarity": "Rare",
+    "artist": "Terese Nielsen",
+    "power": "1",
+    "toughness": "1",
+    "manaCost": "{R}",
+    "text": "If you would draw a card, you may skip that draw instead.",
+    "originalText": "If you would draw a card, you may skip that draw instead.",
+    "flavor": "\"Lizards make excellent familiars. They never know when they've lost.\"\n\n—Matoc, lavamancer",
+    "number": "210",
+    "imageName": "obstinate familiar",
+    "foreignNames": [
+      {
+        "language": "French",
+        "name": "Familier tenace"
+      },
+      {
+        "language": "German",
+        "name": "Eigenwilliger Vertrauter"
+      },
+      {
+        "language": "Italian",
+        "name": "Famiglio Caparbio"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Familiar Obstinado"
+      },
+      {
+        "language": "Spanish",
+        "name": "Familiar obstinado"
+      }
+    ],
+    "legalities": {
+      "Odyssey Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Odyssey"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "colors": [
+      "White"
+    ],
+    "multiverseid": 107537,
+    "name": "Brace for Impact",
+    "originalType": "Instant",
+    "cmc": 5,
+    "rarity": "Uncommon",
+    "artist": "Dan Scott",
+    "manaCost": "{4}{W}",
+    "text": "Prevent all damage that would be dealt to target multicolored creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.",
+    "originalText": "Prevent all damage that would be dealt to target multicolored creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.",
+    "flavor": "Flesh can be tempered by spellcraft and forged ever stronger by the hammers of foes.",
+    "number": "5",
+    "imageName": "brace for impact",
+    "foreignNames": [
+      {
+        "language": "Chinese Simplified",
+        "name": "抵御冲击"
+      },
+      {
+        "language": "French",
+        "name": "Préparez-vous à l'impact"
+      },
+      {
+        "language": "German",
+        "name": "Vorbereitung auf den Aufprall"
+      },
+      {
+        "language": "Italian",
+        "name": "Prepararsi all'Impatto"
+      },
+      {
+        "language": "Japanese",
+        "name": "衝撃の支え"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Preparar para Impacto"
+      },
+      {
+        "language": "Russian",
+        "name": "Противостояние удару"
+      },
+      {
+        "language": "Spanish",
+        "name": "Preparado para el impacto"
+      }
+    ],
+    "legalities": {
+      "Modern": "Legal",
+      "Ravnica Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Dissension"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Creature — Drake",
+    "types": [
+      "Creature"
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "multiverseid": 265400,
+    "name": "Tower Drake",
+    "subtypes": [
+      "Drake"
+    ],
+    "originalType": "Creature — Drake",
+    "cmc": 3,
+    "rarity": "Common",
+    "artist": "Ryan Barger",
+    "power": "2",
+    "toughness": "1",
+    "manaCost": "{2}{U}",
+    "text": "Flying\n\n{W}: Tower Drake gets +0/+1 until end of turn.",
+    "originalText": "Flying\n\n{W}: Tower Drake gets +0/+1 until end of turn.",
+    "flavor": "The first motion put forth in the pristine Jelenn Column was for severe restrictions on the airspace around New Prahv.",
+    "number": "55",
+    "watermark": "Azorius",
+    "imageName": "tower drake",
+    "foreignNames": [
+      {
+        "language": "Chinese Traditional",
+        "name": "樓塔龍獸"
+      },
+      {
+        "language": "Chinese Simplified",
+        "name": "楼塔龙兽"
+      },
+      {
+        "language": "French",
+        "name": "Drakôn des tours"
+      },
+      {
+        "language": "German",
+        "name": "Turmsceada"
+      },
+      {
+        "language": "Italian",
+        "name": "Draghetto della Torre"
+      },
+      {
+        "language": "Japanese",
+        "name": "塔のドレイク"
+      },
+      {
+        "language": "Korean",
+        "name": "탑 드레이크"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Dragonete da Torre"
+      },
+      {
+        "language": "Russian",
+        "name": "Башенный Дрейк"
+      },
+      {
+        "language": "Spanish",
+        "name": "Draco de la torre"
+      }
+    ],
+    "legalities": {
+      "Standard": "Legal",
+      "Modern": "Legal",
+      "Return to Ravnica Block": "Legal",
+      "Invasion Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Tribal Wars Standard": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Invasion",
+      "Return to Ravnica"
+    ]
+  },
+  {
+    "layout": "plane",
+    "type": "Plane — Valla",
+    "types": [
+      "Plane"
+    ],
+    "multiverseid": 198084,
+    "name": "Immersturm",
+    "subtypes": [
+      "Valla"
+    ],
+    "originalType": "Plane — Valla",
+    "rarity": "Common",
+    "artist": "Raymond Swanland",
+    "text": "Whenever a creature enters the battlefield, that creature's controller may have it deal damage equal to its power to target creature or player of his or her choice.\n\nWhenever you roll {C}, exile target creature, then return it to the battlefield under its owner's control.",
+    "originalText": "Whenever a creature enters the battlefield, that creature's controller may have it deal damage equal to its power to target creature or player of his or her choice.\n\nWhenever you roll {C}, exile target creature, then return it to the battlefield under its owner's control.",
+    "number": "17",
+    "rulings": [
+      {
+        "date": "2009-10-01",
+        "text": "A plane card is treated as if its text box included \"When you roll {PW}, put this card on the bottom of its owner's planar deck face down, then move the top card of your planar deck off that planar deck and turn it face up.\" This is called the \"planeswalking ability.\""
+      },
+      {
+        "date": "2009-10-01",
+        "text": "A face-up plane card that's turned face down becomes a new object with no relation to its previous existence. In particular, it loses all counters it may have had."
+      },
+      {
+        "date": "2009-10-01",
+        "text": "The controller of a face-up plane card is the player designated as the \"planar controller.\" Normally, the planar controller is whoever the active player is. However, if the current planar controller would leave the game, instead the next player in turn order that wouldn't leave the game becomes the planar controller, then the old planar controller leaves the game. The new planar controller retains that designation until he or she leaves the game or a different player becomes the active player, whichever comes first."
+      },
+      {
+        "date": "2009-10-01",
+        "text": "If an ability of a plane refers to \"you,\" it's referring to whoever the plane's controller is at the time, not to the player that started the game with that plane card in his or her deck. Many abilities of plane cards affect all players, while many others affect only the planar controller, so read each ability carefully."
+      },
+      {
+        "date": "2009-10-01",
+        "text": "If a creature controlled by a player other than the planar controller enters the battlefield, the planar controller (not the creature's controller) controls Immersturm's triggered ability. That means that if multiple creatures enter the battlefield at the same time, that player controls all of Immersturm's triggered abilities and may put them on the stack in whichever order he or she likes. The last one put on the stack is the first one to resolve."
+      },
+      {
+        "date": "2009-10-01",
+        "text": "When the {C} ability resolves, the targeted creature is exiled, then immediately returned to the battlefield as a new permanent with no relation to its previous existence."
+      },
+      {
+        "date": "2009-10-01",
+        "text": "Any \"as [this permanent] enters the battlefield\" choices for the card returned by the {C} ability are made by that card's owner, not its old controller or the controller of the {C} ability."
+      },
+      {
+        "date": "2009-10-01",
+        "text": "A token that has left the battlefield can't come back onto the battlefield. If the {C} ability exiles a token, that token remains in exile until state-based actions are checked, then it ceases to exist."
+      }
+    ],
+    "imageName": "immersturm",
+    "foreignNames": [
+      {
+        "language": "Japanese",
+        "name": "イマースターム"
+      }
+    ],
+    "legalities": {
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Planechase"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Planeswalker — Vraska",
+    "types": [
+      "Planeswalker"
+    ],
+    "colors": [
+      "Black",
+      "Green"
+    ],
+    "multiverseid": 290538,
+    "name": "Vraska the Unseen",
+    "subtypes": [
+      "Vraska"
+    ],
+    "originalType": "Planeswalker — Vraska",
+    "cmc": 5,
+    "rarity": "Mythic Rare",
+    "artist": "Aleksi Briclot",
+    "loyalty": 5,
+    "manaCost": "{3}{B}{G}",
+    "text": "+1: Until your next turn, whenever a creature deals combat damage to Vraska the Unseen, destroy that creature.\n\n−3: Destroy target nonland permanent.\n\n−7: Put three 1/1 black Assassin creature tokens onto the battlefield with \"Whenever this creature deals combat damage to a player, that player loses the game.\"",
+    "originalText": "+1: Until your next turn, whenever a creature deals combat damage to Vraska the Unseen, destroy that creature.\n\n-3: Destroy target nonland permanent.\n\n-7: Put three 1/1 black Assassin creature tokens onto the battlefield with \"Whenever this creature deals combat damage to a player, that player loses the game.\"",
+    "number": "208",
+    "rulings": [
+      {
+        "date": "2012-10-01",
+        "text": "If an effect creates a copy of one of the Assassin creature tokens, the copy will also have the triggered ability."
+      },
+      {
+        "date": "2012-10-01",
+        "text": "Each Assassin token's triggered ability will trigger whenever it deals combat damage to any player, including you."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "Planeswalkers are permanents. You can cast one at the time you could cast a sorcery. When your planeswalker spell resolves, it enters the battlefield under your control."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "Planeswalkers are not creatures. Spells and abilities that affect creatures won’t affect them."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "Planeswalkers have loyalty. A planeswalker enters the battlefield with a number of loyalty counters on it equal to the number printed in its lower right corner. Activating one of its abilities may cause it to gain or lose loyalty counters. Damage dealt to a planeswalker causes that many loyalty counters to be removed from it. If it has no loyalty counters on it, it’s put into its owner’s graveyard as a state-based action."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "Planeswalkers each have a number of activated abilities called “loyalty abilities.” You can activate a loyalty ability of a planeswalker you control only at the time you could cast a sorcery and only if you haven’t activated one of that planeswalker’s loyalty abilities yet that turn."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "The cost to activate a planeswalker’s loyalty ability is represented by a symbol with a number inside. Up-arrows contain positive numbers, such as “+1”; this means “Put one loyalty counter on this planeswalker.” Down-arrows contain negative numbers, such as “-7”; this means “Remove seven loyalty counters from this planeswalker.” A symbol with a “0” means “Put zero loyalty counters on this planeswalker.”"
+      },
+      {
+        "date": "2013-07-01",
+        "text": "You can’t activate a planeswalker’s ability with a negative loyalty cost unless the planeswalker has at least that many loyalty counters on it."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "Planeswalkers can’t attack (unless an effect turns the planeswalker into a creature). However, they can be attacked. Each of your attacking creatures can attack your opponent or a planeswalker that player controls. You say which as you declare attackers."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "If your planeswalkers are being attacked, you can block the attackers as normal."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "If a creature that’s attacking a planeswalker isn’t blocked, it’ll deal its combat damage to that planeswalker. Damage dealt to a planeswalker causes that many loyalty counters to be removed from it."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "If a source you control would deal noncombat damage to an opponent, you may have that source deal that damage to a planeswalker that opponent controls instead. For example, although you can’t target a planeswalker with Shock, you can target your opponent with Shock, and then as Shock resolves, choose to have Shock deal its 2 damage to one of your opponent’s planeswalkers. (You can’t split up that damage between different players and/or planeswalkers.) If you have Shock deal its damage to a planeswalker, two loyalty counters are removed from it."
+      },
+      {
+        "date": "2013-07-01",
+        "text": "If a player controls two or more planeswalkers that share a planeswalker type, that player chooses one of them and the rest are put into their owners’ graveyards as a state-based action."
+      }
+    ],
+    "imageName": "vraska the unseen",
+    "foreignNames": [
+      {
+        "language": "Chinese Traditional",
+        "name": "隱密客瓦絲卡"
+      },
+      {
+        "language": "Chinese Simplified",
+        "name": "隐密客瓦丝卡"
+      },
+      {
+        "language": "French",
+        "name": "Vraska l'Inapparente"
+      },
+      {
+        "language": "German",
+        "name": "Vraska die Unbetrachtete"
+      },
+      {
+        "language": "Italian",
+        "name": "Vraska l'Invisibile"
+      },
+      {
+        "language": "Japanese",
+        "name": "見えざる者、ヴラスカ"
+      },
+      {
+        "language": "Korean",
+        "name": "보이지 않는 자 브라스카"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Vraska, a Oculta"
+      },
+      {
+        "language": "Russian",
+        "name": "Враска Невидимая"
+      },
+      {
+        "language": "Spanish",
+        "name": "Vraska la invisible"
+      }
+    ],
+    "legalities": {
+      "Standard": "Legal",
+      "Modern": "Legal",
+      "Return to Ravnica Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Tribal Wars Standard": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Return to Ravnica",
+      "Duel Decks: Jace vs. Vraska"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Artifact — Equipment",
+    "types": [
+      "Artifact"
+    ],
+    "multiverseid": 370445,
+    "name": "Runed Stalactite",
+    "subtypes": [
+      "Equipment"
+    ],
+    "originalType": "Artifact — Equipment",
+    "cmc": 1,
+    "rarity": "Common",
+    "artist": "Jim Pavelec",
+    "manaCost": "{1}",
+    "text": "Equipped creature gets +1/+1 and is every creature type.\n\nEquip {2}",
+    "originalText": "Equipped creature gets +1/+1 and is every creature type.\n\nEquip {2}",
+    "flavor": "When a changeling adopts a form no other changeling has taken, a rune appears in the caverns of Velis Vel to mark the event.",
+    "number": "214",
+    "imageName": "runed stalactite",
+    "foreignNames": [
+      {
+        "language": "Chinese Traditional",
+        "name": "符文鐘乳石"
+      },
+      {
+        "language": "Chinese Simplified",
+        "name": "符文钟乳石"
+      },
+      {
+        "language": "French",
+        "name": "Stalactite couvert de runes"
+      },
+      {
+        "language": "German",
+        "name": "Runenstalaktit"
+      },
+      {
+        "language": "Italian",
+        "name": "Stalattite Runica"
+      },
+      {
+        "language": "Japanese",
+        "name": "ルーン刻みの鍾乳石"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Estalactite Runica"
+      },
+      {
+        "language": "Russian",
+        "name": "Рунный Сталактит"
+      },
+      {
+        "language": "Spanish",
+        "name": "Estalactita rúnica"
+      }
+    ],
+    "legalities": {
+      "Modern": "Legal",
+      "Lorwyn-Shadowmoor Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Lorwyn",
+      "Modern Masters"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Sorcery",
+    "types": [
+      "Sorcery"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "multiverseid": 20365,
+    "name": "Soul Feast",
+    "originalType": "Sorcery",
+    "cmc": 5,
+    "rarity": "Uncommon",
+    "artist": "Ray Lago",
+    "manaCost": "{3}{B}{B}",
+    "text": "Target player loses 4 life and you gain 4 life.",
+    "originalText": "Target player loses 4 life. You gain 4 life.",
+    "flavor": "Evil often dines alone.",
+    "number": "90",
+    "imageName": "soul feast",
+    "foreignNames": [
+      {
+        "language": "Chinese Traditional",
+        "name": "靈魂盛宴"
+      },
+      {
+        "language": "Chinese Simplified",
+        "name": "灵魂盛宴"
+      },
+      {
+        "language": "French",
+        "name": "Festin d'âmes"
+      },
+      {
+        "language": "German",
+        "name": "Seelenmahlzeit"
+      },
+      {
+        "language": "Italian",
+        "name": "Banchetto dell'Anima"
+      },
+      {
+        "language": "Japanese",
+        "name": "魂の饗宴"
+      },
+      {
+        "language": "Korean",
+        "name": "영혼 잔치"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Festim de Almas"
+      },
+      {
+        "language": "Russian",
+        "name": "Пир души"
+      },
+      {
+        "language": "Spanish",
+        "name": "Festín de alma"
+      }
+    ],
+    "legalities": {
+      "Modern": "Legal",
+      "Urza Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Urza's Destiny",
+      "Starter 1999",
+      "Seventh Edition",
+      "Eighth Edition",
+      "Ninth Edition",
+      "Tenth Edition"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Land",
+    "types": [
+      "Land"
+    ],
+    "multiverseid": 26634,
+    "name": "Slippery Karst",
+    "originalType": "Land",
+    "rarity": "Common",
+    "artist": "Stephen Daniele",
+    "text": "Slippery Karst enters the battlefield tapped.\n\n{T}: Add {G} to your mana pool.\n\nCycling {2} ({2}, Discard this card: Draw a card.)",
+    "originalText": "Cycling {2} (You may pay {2} and discard this card from your hand to draw a card. Play this ability any time you could play an instant.)\n\nSlippery Karst comes into play tapped.\n\n{T}: Add {G} to your mana pool.",
+    "rulings": [
+      {
+        "date": "2008-10-01",
+        "text": "Cycling is an activated ability. Effects that interact with activated abilities (such as Stifle or Rings of Brighthearth) will interact with cycling. Effects that interact with spells (such as Remove Soul or Faerie Tauntings) will not."
+      }
+    ],
+    "imageName": "slippery karst",
+    "foreignNames": [
+      {
+        "language": "French",
+        "name": "Karst glissant"
+      },
+      {
+        "language": "German",
+        "name": "Schlüpfriger Karst"
+      },
+      {
+        "language": "Italian",
+        "name": "Carso Scivoloso"
+      },
+      {
+        "language": "Japanese",
+        "name": "滑りやすいカルスト"
+      },
+      {
+        "language": "Spanish",
+        "name": "Gruta resbaladiza"
+      }
+    ],
+    "legalities": {
+      "Urza Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Urza's Saga",
+      "Anthologies",
+      "Battle Royale Box Set",
+      "Beatdown Box Set",
+      "Duel Decks: Garruk vs. Liliana",
+      "Commander 2013 Edition"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Creature — Illusion",
+    "types": [
+      "Creature"
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "multiverseid": 39436,
+    "name": "Mistform Dreamer",
+    "subtypes": [
+      "Illusion"
+    ],
+    "originalType": "Creature — Illusion",
+    "cmc": 3,
+    "rarity": "Common",
+    "artist": "Matthew Mitchell",
+    "power": "2",
+    "toughness": "1",
+    "manaCost": "{2}{U}",
+    "text": "Flying\n\n{1}: Mistform Dreamer becomes the creature type of your choice until end of turn.",
+    "originalText": "Flying\n\n{1}: Mistform Dreamer's type becomes the creature type of your choice until end of turn.",
+    "flavor": "Devotion, the second myth of reality: The faithful are most hurt by the objects of their faith.",
+    "number": "93",
+    "imageName": "mistform dreamer",
+    "foreignNames": [
+      {
+        "language": "French",
+        "name": "Rêveur changebrume"
+      },
+      {
+        "language": "German",
+        "name": "Nebelgestaltträumer"
+      },
+      {
+        "language": "Italian",
+        "name": "Sognatore Nebbiforme"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Sonhador Nebuliforme"
+      },
+      {
+        "language": "Spanish",
+        "name": "Soñador nebuliforme"
+      }
+    ],
+    "legalities": {
+      "Onslaught Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Onslaught"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Enchantment — Aura",
+    "types": [
+      "Enchantment"
+    ],
+    "colors": [
+      "White"
+    ],
+    "multiverseid": 1635,
+    "name": "Spirit Link",
+    "subtypes": [
+      "Aura"
+    ],
+    "originalType": "Enchant Creature",
+    "cmc": 1,
+    "rarity": "Uncommon",
+    "artist": "Kaja Foglio",
+    "manaCost": "{W}",
+    "text": "Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)\n\nWhenever enchanted creature deals damage, you gain that much life.",
+    "originalText": "For every point of damage target creature does, you gain 1 life.",
+    "rulings": [
+      {
+        "date": "2004-10-04",
+        "text": "Damage that is redirected is not dealt to the original creature or player, but it is dealt to the new creature or player."
+      },
+      {
+        "date": "2004-10-04",
+        "text": "You only gain the life when the triggered ability resolves. If you are reduced to zero life before the ability resolves, you will lose before gaining the life."
+      },
+      {
+        "date": "2008-04-01",
+        "text": "You gain life for all damage which is not prevented, regardless of what the creature damages (player or another creature) or the toughness of the blocking creature. If you put this on a 5/5 and it is blocked by a 1/1, you still gain 5 life."
+      }
+    ],
+    "imageName": "spirit link",
+    "foreignNames": [
+      {
+        "language": "Chinese Simplified",
+        "name": "心灵羁绊"
+      },
+      {
+        "language": "Chinese Traditional",
+        "name": "心靈羈絆"
+      },
+      {
+        "language": "French",
+        "name": "Liaison psychique"
+      },
+      {
+        "language": "German",
+        "name": "Geisteskontakt"
+      },
+      {
+        "language": "Italian",
+        "name": "Legame Spirituale"
+      },
+      {
+        "language": "Japanese",
+        "name": "魂の絆"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Vínculo Espiritual"
+      },
+      {
+        "language": "Russian",
+        "name": "Духовная связь"
+      },
+      {
+        "language": "Spanish",
+        "name": "Vínculo espiritual"
+      }
+    ],
+    "legalities": {
+      "Modern": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Legends",
+      "Fourth Edition",
+      "Fifth Edition",
+      "Classic Sixth Edition",
+      "Seventh Edition",
+      "Eighth Edition",
+      "Ninth Edition",
+      "Tenth Edition"
+    ]
+  },
+  {
+    "layout": "token",
+    "type": "Creature — Beast",
+    "types": [
+      "Creature"
+    ],
+    "multiverseid": 201842,
+    "name": "Beast",
+    "subtypes": [
+      "Beast"
+    ],
+    "originalType": "Creature — Beast",
+    "rarity": "Common",
+    "artist": "John Donahue",
+    "power": "4",
+    "toughness": "4",
+    "number": "T1",
+    "variations": [
+      201844
+    ],
+    "imageName": "beast1",
+    "legalities": {
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal"
+    },
+    "printings": [
+      "Duel Decks: Garruk vs. Liliana"
+    ]
+  },
+  {
+    "layout": "vanguard",
+    "type": "Vanguard",
+    "types": [
+      "Vanguard"
+    ],
+    "multiverseid": 12326,
+    "name": "Urza",
+    "originalType": "Vanguard — Character",
+    "rarity": "Special",
+    "artist": "Mark Tedin",
+    "hand": -1,
+    "life": 10,
+    "text": "{3}: Urza deals 1 damage to target creature or player.",
+    "originalText": "{3}: Urza deals 1 damage to target creature or player.",
+    "flavor": "An artificer of unparalleled renown, Urza was a powerful cipher even before he was able to planeswalk. Seeing the world as a large, integrated machine is his greatest strength and weakness, enabling him to solve almost any problem but blinding him to his solutions' effects on others.",
+    "imageName": "urza",
+    "legalities": {},
+    "printings": [
+      "Vanguard"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Artifact Creature — Golem",
+    "types": [
+      "Artifact",
+      "Creature"
+    ],
+    "multiverseid": 378532,
+    "name": "Pillar of War",
+    "subtypes": [
+      "Golem"
+    ],
+    "originalType": "Artifact Creature — Golem",
+    "cmc": 3,
+    "rarity": "Uncommon",
+    "artist": "Aleksi Briclot",
+    "power": "3",
+    "toughness": "3",
+    "manaCost": "{3}",
+    "text": "Defender\n\nAs long as Pillar of War is enchanted, it can attack as though it didn't have defender.",
+    "originalText": "Defender\r\n\nAs long as Pillar of War is enchanted, it can attack as though it didn't have defender.",
+    "flavor": "Just because a temple has no guards doesn't mean it's undefended.",
+    "number": "160",
+    "rulings": [
+      {
+        "date": "2014-02-01",
+        "text": "Defender only matters when Pillar of War could be declared as an attacking creature. If Pillar of War is already attacking, it becoming not enchanted doesn’t cause it to be removed from combat."
+      }
+    ],
+    "imageName": "pillar of war",
+    "foreignNames": [
+      {
+        "language": "Chinese Traditional",
+        "name": "好戰雕柱"
+      },
+      {
+        "language": "Chinese Simplified",
+        "name": "好战雕柱"
+      },
+      {
+        "language": "French",
+        "name": "Pilier de guerre"
+      },
+      {
+        "language": "German",
+        "name": "Säule des Krieges"
+      },
+      {
+        "language": "Italian",
+        "name": "Colonna di Guerra"
+      },
+      {
+        "language": "Japanese",
+        "name": "戦いの柱"
+      },
+      {
+        "language": "Korean",
+        "name": "전쟁 기둥"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Pilar de Guerra"
+      },
+      {
+        "language": "Russian",
+        "name": "Колонна Войны"
+      },
+      {
+        "language": "Spanish",
+        "name": "Estatua de guerra"
+      }
+    ],
+    "legalities": {
+      "Standard": "Legal",
+      "Modern": "Legal",
+      "Theros Block": "Legal",
+      "Legacy": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Tribal Wars Standard": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Born of the Gods"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "colors": [
+      "White"
+    ],
+    "multiverseid": 3500,
+    "name": "Mangara's Blessing",
+    "originalType": "Instant",
+    "cmc": 3,
+    "rarity": "Uncommon",
+    "artist": "David A. Cherry",
+    "manaCost": "{2}{W}",
+    "text": "You gain 5 life.\n\nWhen a spell or ability an opponent controls causes you to discard Mangara's Blessing, you gain 2 life, and you return Mangara's Blessing from your graveyard to your hand at the beginning of the next end step.",
+    "originalText": "Gain 5 life. \n\nWhen a spell or ability an opponent controls causes you to discard Mangara's Blessing, you gain 2 life and return Mangara's Blessing from your graveyard to your hand at end of turn.",
+    "rulings": [
+      {
+        "date": "2004-10-04",
+        "text": "The 2 life from having it discarded is gained when the triggered ability resolves, not at end of turn. Only the return to hand is done at end of turn."
+      },
+      {
+        "date": "2004-10-04",
+        "text": "The Mangara's Blessing card is only returned if it is still in the graveyard at end of turn and never left the graveyard in the meantime."
+      }
+    ],
+    "imageName": "mangara's blessing",
+    "legalities": {
+      "Mirage Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Mirage"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Creature — Spawn",
+    "types": [
+      "Creature"
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "multiverseid": 1478,
+    "name": "Elder Spawn",
+    "subtypes": [
+      "Spawn"
+    ],
+    "originalType": "Summon — Spawn",
+    "cmc": 7,
+    "rarity": "Rare",
+    "artist": "Jesper Myrfors",
+    "power": "6",
+    "toughness": "6",
+    "manaCost": "{4}{U}{U}{U}",
+    "text": "At the beginning of your upkeep, unless you sacrifice an Island, sacrifice Elder Spawn and it deals 6 damage to you.\n\nElder Spawn can't be blocked by red creatures.",
+    "originalText": "Elder Spawn cannot be blocked by red creatures. Sacrifice one of your islands during your upkeep or Elder Spawn does 6 damage to you and is buried.",
+    "imageName": "elder spawn",
+    "legalities": {
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Legends"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "multiverseid": 373642,
+    "name": "Boon of Erebos",
+    "originalType": "Instant",
+    "cmc": 1,
+    "rarity": "Common",
+    "artist": "James Ryman",
+    "manaCost": "{B}",
+    "text": "Target creature gets +2/+0 until end of turn. Regenerate it. You lose 2 life.",
+    "originalText": "Target creature gets +2/+0 until end of turn. Regenerate it. You lose 2 life.",
+    "flavor": "\"Death is not a certainty. Erebos determines when a mortal's time is up.\"\r\n\n—Iadorna, death priest of Erebos",
+    "number": "80",
+    "rulings": [
+      {
+        "date": "2013-09-15",
+        "text": "The loss of life is part of the spell’s effect. It’s not an additional cost. If Boon of Erebos is countered, you won’t lose life."
+      }
+    ],
+    "imageName": "boon of erebos",
+    "foreignNames": [
+      {
+        "language": "Chinese Traditional",
+        "name": "厄睿柏斯的恩澤"
+      },
+      {
+        "language": "Chinese Simplified",
+        "name": "厄睿柏斯的恩泽"
+      },
+      {
+        "language": "French",
+        "name": "Faveur d'Érébos"
+      },
+      {
+        "language": "German",
+        "name": "Segen des Erebos"
+      },
+      {
+        "language": "Italian",
+        "name": "Beneficio di Erebos"
+      },
+      {
+        "language": "Japanese",
+        "name": "エレボスの加護"
+      },
+      {
+        "language": "Korean",
+        "name": "에레보스의 축복"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Bênção de Érebo"
+      },
+      {
+        "language": "Russian",
+        "name": "Благодеяние Эреба"
+      },
+      {
+        "language": "Spanish",
+        "name": "Dádiva de Erebos"
+      }
+    ],
+    "legalities": {
+      "Standard": "Legal",
+      "Modern": "Legal",
+      "Theros Block": "Legal",
+      "Legacy": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Tribal Wars Standard": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Theros"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Creature — Treefolk",
+    "types": [
+      "Creature"
+    ],
+    "colors": [
+      "Green"
+    ],
+    "multiverseid": 159,
+    "name": "Ironroot Treefolk",
+    "subtypes": [
+      "Treefolk"
+    ],
+    "originalType": "Summon — Treefolk",
+    "cmc": 5,
+    "rarity": "Common",
+    "artist": "Jesper Myrfors",
+    "power": "3",
+    "toughness": "5",
+    "manaCost": "{4}{G}",
+    "flavor": "The mating habits of Treefolk, particularly the stalwart Ironroot Treefolk, are truly absurd. Molasses comes to mind. It's amazing the species can survive at all given such protracted periods of mate selection, conjugation, and gestation.",
+    "imageName": "ironroot treefolk",
+    "legalities": {
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Limited Edition Alpha",
+      "Limited Edition Beta",
+      "Unlimited Edition",
+      "Revised Edition",
+      "Fourth Edition",
+      "Fifth Edition"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Sorcery",
+    "types": [
+      "Sorcery"
+    ],
+    "colors": [
+      "Red"
+    ],
+    "multiverseid": 24639,
+    "name": "Panic Attack",
+    "originalType": "Sorcery",
+    "cmc": 3,
+    "rarity": "Common",
+    "artist": "Mike Ploog",
+    "manaCost": "{2}{R}",
+    "text": "Up to three target creatures can't block this turn.",
+    "originalText": "Up to three target creatures can't block this turn.",
+    "flavor": "Sometimes everyone decides to go for help at the same time.",
+    "number": "98",
+    "imageName": "panic attack",
+    "foreignNames": [
+      {
+        "language": "Chinese Simplified",
+        "name": "惊慌失措"
+      },
+      {
+        "language": "French",
+        "name": "Attaque paniquante"
+      },
+      {
+        "language": "German",
+        "name": "Panikanfall"
+      },
+      {
+        "language": "Italian",
+        "name": "Attacco di Panico"
+      },
+      {
+        "language": "Japanese",
+        "name": "恐ろしき攻撃"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Ataque de Pânico"
+      },
+      {
+        "language": "Russian",
+        "name": "Паника от атаки"
+      },
+      {
+        "language": "Spanish",
+        "name": "Ataque de pánico"
+      }
+    ],
+    "legalities": {
+      "Modern": "Legal",
+      "Masques Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Prophecy",
+      "Eighth Edition",
+      "Ninth Edition",
+      "Magic 2010"
+    ]
+  },
+  {
+    "layout": "normal",
+    "type": "Instant",
+    "types": [
+      "Instant"
+    ],
+    "colors": [
+      "White",
+      "Black"
+    ],
+    "multiverseid": 368498,
+    "name": "Mortify",
+    "originalType": "Instant",
+    "cmc": 3,
+    "rarity": "Uncommon",
+    "artist": "Nils Hamm",
+    "manaCost": "{1}{W}{B}",
+    "text": "Destroy target creature or enchantment.",
+    "originalText": "Destroy target creature or enchantment.",
+    "flavor": "Many who cross Sorin's path come down with a sudden and fatal case of being-in-the-way-of-a-millennia-old-vampire.",
+    "number": "25",
+    "rulings": [
+      {
+        "date": "2006-02-01",
+        "text": "This spell isn't Modal.  When it resolves, it will destroy the target if it's a creature or an enchantment, even if it changed from one to the other between targeting and resolution."
+      }
+    ],
+    "imageName": "mortify",
+    "foreignNames": [
+      {
+        "language": "Chinese Simplified",
+        "name": "羞愧"
+      },
+      {
+        "language": "French",
+        "name": "Mortification"
+      },
+      {
+        "language": "German",
+        "name": "Kasteiung"
+      },
+      {
+        "language": "Italian",
+        "name": "Mortificare"
+      },
+      {
+        "language": "Japanese",
+        "name": "屈辱"
+      },
+      {
+        "language": "Portuguese (Brazil)",
+        "name": "Mortificar"
+      },
+      {
+        "language": "Russian",
+        "name": "Унижение"
+      },
+      {
+        "language": "Spanish",
+        "name": "Mortificar"
+      }
+    ],
+    "legalities": {
+      "Modern": "Legal",
+      "Ravnica Block": "Legal",
+      "Legacy": "Legal",
+      "Vintage": "Legal",
+      "Freeform": "Legal",
+      "Prismatic": "Legal",
+      "Tribal Wars Legacy": "Legal",
+      "Singleton 100": "Legal",
+      "Commander": "Legal"
+    },
+    "printings": [
+      "Guildpact",
+      "Magic: The Gathering-Commander",
+      "Duel Decks: Sorin vs. Tibalt",
+      "Magic: The Gathering—Conspiracy"
+    ]
+  }
+]
